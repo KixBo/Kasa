@@ -1,3 +1,63 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* Définit la base à 16px */
+  line-height: 1.5;
+}
+
 body {
   margin: 0;
+  font-family: Arial, sans-serif; /* Tu peux personnaliser */
+  background-color: #ffffff; /* Personnalise la couleur de fond */
+  color: #000000; /* Personnalise la couleur du texte */
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: auto;
 }
