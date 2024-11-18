@@ -1,7 +1,12 @@
-import './styles/App.scss';
+import "./styles/App.scss";
+import AppRooter from "./components/Router";
 
 function App() {
-  return <div>Bienvenue</div>;
+  return (
+    <div>
+      <AppRooter />
+    </div>
+  );
 }
 
 export default App;
