@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/Logo.svg";
+import "../styles/header.scss";
 
 function Header() {
   return (
@@ -20,5 +21,3 @@ function Header() {
 }
 
 export default Header;
-/*{({ isActive }) => (isActive ? 'active' : '')} */
-/* className={(stateLink) => { console.log(stateLink); // Affiche l'objet complet dans la console return stateLink.isActive ? 'active' : ''; }}  */

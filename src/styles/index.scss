@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-/* Reset CSS */
+/* Start Reset CSS */
 *,
 *::before,
 *::after {
@@ -62,3 +62,4 @@ table {
 :focus-visible {
   outline: auto;
 }
+/* End Reset CSS */
