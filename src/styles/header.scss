@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .active {
   text-decoration: underline;
 }
@@ -17,5 +19,5 @@ ul {
 
 a {
   font-weight: 500;
-  font-size: 24px;
+  font-size: $font-size-m;
 }
