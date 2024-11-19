@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 /* Reset CSS */
 *,
 *::before,
@@ -8,15 +10,14 @@
 }
 
 html {
-  font-size: 100%; /* Définit la base à 16px */
+  font-size: $font-size;
   line-height: 1.5;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif; /* Tu peux personnaliser */
-  background-color: #ffffff; /* Personnalise la couleur de fond */
-  color: #000000; /* Personnalise la couleur du texte */
+  font-family: $font-family;
+  background-color: #ffffff;
   line-height: 1.5;
 }
 
