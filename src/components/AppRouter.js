@@ -5,6 +5,11 @@ import AccommodationSheet from "../pages/AccommodationSheet";
 import NotFound from "../pages/NotFound";
 
 function AppRouter() {
+// state (état, données)
+
+// comportements
+
+// affichage (render)
   return (
       <Routes>
         <Route path="/" element={<Home />} />

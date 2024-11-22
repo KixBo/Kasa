@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-footer {
+.footer {
   background-color: $black;
   color: $white;
   font-size: $font-size-m;
@@ -9,11 +9,11 @@ footer {
   align-items: center;
 }
 
-img {
+.footerLogo {
   margin-top: 66px;
   margin-bottom: 40px;
 }
 
-p {
+.rights {
   margin-bottom: 30px;
 }
