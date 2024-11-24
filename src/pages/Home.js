@@ -10,14 +10,14 @@ function Home() {
 
   // affichage (render)
   return (
-    <div>
+    <>
       <Banner />
       <div className="cardsContainer">
         {data.map((accommodation) => {
           return <Card key={accommodation.id} accommodation={accommodation} />
         })}
       </div>
-    </div>
+    </>
   );
 }
 

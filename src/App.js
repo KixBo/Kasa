@@ -1,20 +1,17 @@
 import "./styles/App.scss";
-import AppRooter from "./components/AppRouter";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import AppRouter from "./components/AppRouter";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-// state (état, données)
+  // state (état, données)
 
-// comportements
+  // comportements
 
-// affichage (render)
+  // affichage (render)
   return (
-    <div>
-      <Header />
-      <AppRooter />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 

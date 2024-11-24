@@ -3,20 +3,23 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import AccommodationSheet from "../pages/AccommodationSheet";
 import NotFound from "../pages/NotFound";
+import Layout from "../components/Layout";
 
 function AppRouter() {
-// state (état, données)
+  // state (état, données)
 
-// comportements
+  // comportements
 
-// affichage (render)
+  // affichage (render)
   return (
-      <Routes>
-        <Route path="/" element={<Home />} />
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/accommodationsheet" element={<AccommodationSheet />} />
         <Route path="*" element={<NotFound />} />
-      </Routes>
+      </Route>
+    </Routes>
   );
 }
 
