@@ -1,7 +1,6 @@
 @import "./variables.scss";
 
 .banner {
-  background-color: aqua;
   margin: 0px 100px 43px 100px;
   height: 223px;
   display: flex;
@@ -9,8 +8,15 @@
   align-items: center;
   color: $white;
   border-radius: 25px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../public/images/bannerbackground.svg");
   background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.bannerHome {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/images/bannerbackgroundhome.svg)
+}
+
+.bannerAbout {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../public/images/bannerbackgroundabout.svg)
 }

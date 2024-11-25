@@ -1,3 +1,5 @@
+import Banner from "../components/Banner";
+
 function About() {
 // state (état, données)
 
@@ -5,9 +7,9 @@ function About() {
 
 // affichage (render)
   return (
-    <div>
-      <p>Ceci est la page A Propos</p>
-    </div>
+    <>
+      <Banner className="bannerAbout" />
+    </>
   );
 }
 

@@ -1,16 +1,12 @@
 import "../styles/banner.scss";
 
-function Banner() {
-// state (état, données)
+function Banner({ children, className }) {
+  // state (état, données)
 
-// comportements
+  // comportements
 
-// affichage (render)
-  return (
-    <div className="banner">
-      <h1>Chez vous, partout et ailleurs</h1>
-    </div>
-  );
+  // affichage (render)
+  return <div className={`banner ${className}`}>{children}</div>;
 }
 
 export default Banner;
