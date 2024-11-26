@@ -14,10 +14,33 @@
 
 .collapseContent {
   background-color: $light-gray;
-  padding: 20px;
   border-radius: 0 0 5px 5px;
+  padding: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out, padding 600ms linear;
+}
+
+.visible {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 20px;
+}
+
+.invisible {
+  max-height: 0;
+  opacity: 0;
 }
 
 .collapseContainer {
-  margin: 0 208px 40px 208px;
+  margin: 0 208px 30px 208px;
+}
+
+.icon {
+  transform: rotate(0deg);
+  transition: transform 300ms ease-in-out;
+}
+
+.rotation {
+  transform: rotate(-180deg);
 }

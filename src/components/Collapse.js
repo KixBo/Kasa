@@ -1,8 +1,10 @@
 import "../styles/Collapse.scss";
 import icon from "../assets/dropdownicon.svg";
+import { useState } from "react";
 
 function Collapse({ title, content }) {
   // state (état, données)
+  const [isOpen, setOpen] = useState(false);
 
   // comportements
 
@@ -12,9 +14,15 @@ function Collapse({ title, content }) {
       <div className="collapseContainer">
         <div className="collapseTitle">
           <h3>{title}</h3>
-          <img src={icon} alt="Icone d'ouverture/fermeture de l'accordéon" />
+          <img className={`icon ${isOpen && "rotation"}`}
+            onClick={() => {
+              setOpen(!isOpen);
+            }}
+            src={icon}
+            alt="Icone d'ouverture/fermeture de l'accordéon"
+          />
         </div>
-        <div className="collapseContent">
+        <div className={`collapseContent ${isOpen ? "visible" : "invisible"}`}>
           <p>{content}</p>
         </div>
       </div>
