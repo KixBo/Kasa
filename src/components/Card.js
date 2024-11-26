@@ -1,6 +1,6 @@
 import "../styles/card.scss";
 
-function Card({ cover, title}) {
+function Card({ cover, title }) {
 // state (état, données)
 
 // comportements

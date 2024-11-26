@@ -18,7 +18,7 @@ function Home() {
       <div className="cardsContainer">
         {data.map((accommodation) => {
           return (
-            <Link to="/accommodationsheet" className="cardLink">
+            <Link key={accommodation.id} to={`/accommodationsheet/${accommodation.id}`} className="cardLink">
               <Card key={accommodation.id} title={accommodation.title} cover={accommodation.cover} />
             </Link>
           );
