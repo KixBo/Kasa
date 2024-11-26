@@ -2,6 +2,7 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 import data from "../data/accommodations.json";
 import "../styles/home.scss";
+import { Link } from "react-router-dom";
 
 function Home() {
   // state (état, données)
@@ -16,7 +17,11 @@ function Home() {
       </Banner>
       <div className="cardsContainer">
         {data.map((accommodation) => {
-          return <Card key={accommodation.id} accommodation={accommodation} />;
+          return (
+            <Link to="/accommodationsheet" className="cardLink">
+              <Card key={accommodation.id} title={accommodation.title} cover={accommodation.cover} />
+            </Link>
+          );
         })}
       </div>
     </>

@@ -1,6 +1,6 @@
 import "../styles/card.scss";
 
-function Card(props) {
+function Card({ cover, title}) {
 // state (état, données)
 
 // comportements
@@ -8,8 +8,8 @@ function Card(props) {
 // affichage (render)
   return (
     <article className="cardContainer">
-      <img className="cardCover" src={props.accommodation.cover} alt={`Image du logement : ${props.accommodation.title}`} />
-      <h2 className="cardTitle">{props.accommodation.title}</h2>
+      <img className="cardCover" src={cover} alt={`Logement : ${title}`} />
+      <h2 className="cardTitle">{title}</h2>
     </article>
   );
 }
