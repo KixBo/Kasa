@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.collapseTitle {
+  background-color: $primary-color;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+  border-radius: 5px;
+  font-size: $font-size-m;
+}
+
+.collapseContent {
+  background-color: $light-gray;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.collapseContainer {
+  margin: 0 208px 40px 208px;
+}
