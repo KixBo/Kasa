@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import "../styles/NotFound.scss";
+
 function NotFound() {
 // state (état, données)
 
@@ -5,8 +8,10 @@ function NotFound() {
 
 // affichage (render)
   return (
-    <div>
-      <p>Ceci est la page 404 Not Found</p>
+    <div className="notFondContainer">
+      <p className="errorNumber">404</p>
+      <p className="errorText">Oups! La page que vous demandez n'existe pas.</p>
+      <Link to="/" className="homeNavlink">Retourner sur la page d’accueil</Link>
     </div>
   );
 }
