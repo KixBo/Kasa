@@ -1,14 +1,37 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import data from "../data/accommodations.json";
 import Slideshow from "../components/Slideshow";
 import "../styles/AccommodationSheet.scss";
 import starGrey from "../assets/stargrey.svg";
 import starRed from "../assets/starred.svg";
 import Collapse from "../components/Collapse";
+import { useEffect } from "react";
 
 function AccommodationSheet() {
   // state (état, données)
   const { id } = useParams();
+
+
+
+  const navigate = useNavigate()
+
+  const idArray = data.map((accommodation) => {
+    return accommodation.id
+  })
+
+  useEffect(() => {
+    if (!idArray.includes(id)) {
+      navigate("/*");
+    }
+  }, [id]);
+
+  if (!idArray.includes(id)) {
+    return null
+  }
+
+
+
+
   let accommodation = [];
   for (const i of data) {
     if (id === i.id) {
