@@ -19,7 +19,7 @@ function Home() {
         {data.map((accommodation) => {
           return (
             <Link key={accommodation.id} to={`/accommodationsheet/${accommodation.id}`} className="cardLink">
-              <Card key={accommodation.id} title={accommodation.title} cover={accommodation.cover} />
+              <Card title={accommodation.title} cover={accommodation.cover} />
             </Link>
           );
         })}

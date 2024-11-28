@@ -34,6 +34,14 @@
 
 .collapseContainer {
   margin: 0 208px 30px 208px;
+  &.accommodationShhetStyle {
+    margin: 0;
+    width: 100%;
+  }
+  .collapseTitle {
+    font-size: $font-size-s;
+    border-radius: 10px;
+  }
 }
 
 .icon {

@@ -2,7 +2,7 @@ import "../styles/Collapse.scss";
 import icon from "../assets/dropdownicon.svg";
 import { useState } from "react";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, style }) {
   // state (état, données)
   const [isOpen, setOpen] = useState(false);
 
@@ -11,7 +11,7 @@ function Collapse({ title, content }) {
   // affichage (render)
   return (
     <>
-      <div className="collapseContainer">
+      <div className={`collapseContainer ${style === "accommodationSheetStyle" ? "accommodationShhetStyle" : ""}`}>
         <div className="collapseTitle">
           <h3>{title}</h3>
           <img className={`icon ${isOpen && "rotation"}`}
@@ -23,7 +23,7 @@ function Collapse({ title, content }) {
           />
         </div>
         <div className={`collapseContent ${isOpen ? "visible" : "invisible"}`}>
-          <p>{content}</p>
+          {content}
         </div>
       </div>
     </>
