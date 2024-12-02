@@ -11,7 +11,7 @@ function NotFound() {
     <div className="notFondContainer">
       <p className="errorNumber">404</p>
       <p className="errorText">Oups! La page que vous demandez n'existe pas.</p>
-      <Link to="/" className="homeNavlink">
+      <Link to="/" className="toHomeLink">
         Retourner sur la page d’accueil
       </Link>
     </div>

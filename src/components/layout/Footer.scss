@@ -17,13 +17,15 @@
 }
 
 @media (max-width: 1023.98px) {
-  .footerLogo {
-    margin-bottom: 15px;
-  }
-  .footer .rights {
-    font-size: $font-size-xs;
-    max-width: 130px;
-    text-align: center;
-    margin-bottom: 60px;
+  .footer {
+    .footerLogo {
+      margin-bottom: 15px;
+    }
+    .rights {
+      font-size: $font-size-xs;
+      max-width: 130px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
   }
 }
