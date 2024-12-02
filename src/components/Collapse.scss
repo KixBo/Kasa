@@ -1,48 +1,44 @@
 @import "../styles/main.scss";
 
-.collapseContainer {
-  margin: 0 208px 30px 208px;
-  &.accommodationSheetStyle {
-    margin: 0;
-    width: 100%;
+.collapseTitle {
+  background-color: $primary-color;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  .icon {
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out;
+    width: 32px;
   }
-  .collapseTitle {
-    font-size: $font-size-s;
-    border-radius: 10px;
+  .rotation {
+    transform: rotate(-180deg);
   }
+}
+.collapseContent {
+  background-color: $light-gray;
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out, padding 600ms linear;
+}
+.visible {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 20px;
+}
+.invisible {
+  max-height: 0;
+  opacity: 0;
+}
+
+@media (max-width: 1023.98px) {
   .collapseTitle {
-    background-color: $primary-color;
-    color: $white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 10px 15px;
-    border-radius: 5px;
-    font-size: $font-size-m;
     .icon {
-      transform: rotate(0deg);
-      transition: transform 300ms ease-in-out;
+      width: 16px;
     }
-    .rotation {
-      transform: rotate(-180deg);
-    }
-  }
-  .collapseContent {
-    background-color: $light-gray;
-    border-radius: 0 0 5px 5px;
-    padding: 0;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out, padding 600ms linear;
-  }
-  .visible {
-    max-height: 1000px;
-    opacity: 1;
-    padding: 20px;
-  }
-  .invisible {
-    max-height: 0;
-    opacity: 0;
   }
 }
