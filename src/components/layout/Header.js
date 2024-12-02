@@ -10,7 +10,7 @@ function Header() {
   // affichage (render)
   return (
     <header className="header">
-      <img src={logoHeader} alt="Logo de Kasa" />
+      <img src={logoHeader} alt="Logo de Kasa" className="logo"/>
       <nav>
         <ul className="headerUl">
           <li>

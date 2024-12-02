@@ -1,15 +1,43 @@
 @import "../../styles/main.scss";
 
+.bannerText {
+  font-size: $font-size-xl;
+  font-weight: 700;
+}
+
 .cardsContainer {
   margin: 0 100px 50px 100px;
   border-radius: 25px;
   background-color: $light-gray;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
-  column-gap: 60px;
-  padding: 50px;
+  row-gap: 3.46vw;
+  column-gap: 4.16vw;
+  padding: 3.55vw;
   .cardLink {
-    max-width: calc((100% - 120px) / 3);
+    max-width: calc((100% - 8.32vw) / 3);
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .bannerText {
+    font-size: $font-size-m;
+    line-height: normal;
+  }
+  .cardsContainer {
+    margin: 0 20px 27px 20px;
+    padding: 0;
+    flex-direction: column;
+    background-color: $white;
+    row-gap: 20px;
+    .cardLink {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 438px) {
+  .bannerText {
+    max-width: 225px;
   }
 }

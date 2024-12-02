@@ -20,3 +20,19 @@
 .bannerAbout {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../public/images/bannerbackgroundabout.svg);
 }
+
+@media (max-width: 1023.98px) {
+  .banner {
+    height: 111px;
+    margin: 0px 20px 20px 20px;
+    padding-inline: 16px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 438px) {
+  .banner {
+    justify-content: start;
+  }
+}

@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       <Banner className="bannerHome">
-        <h1>Chez vous, partout et ailleurs</h1>
+        <p className="bannerText">Chez vous, partout et ailleurs</p>
       </Banner>
       <div className="cardsContainer">
         {data.map((accommodation) => {

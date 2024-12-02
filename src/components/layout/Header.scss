@@ -18,3 +18,19 @@
     text-decoration: underline;
   }
 }
+
+@media (max-width: 1023.98px) {
+  .header {
+    margin: 20px 20px 30px 20px;
+    .headerUl {
+      gap: 24px;
+    }
+    .logo {
+      height: 47px;
+    }
+    a {
+      font-size: $font-size-xs;
+      text-transform: uppercase;
+    }
+  }
+}
