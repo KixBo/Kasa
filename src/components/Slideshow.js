@@ -1,4 +1,4 @@
-import "../styles/Slideshow.scss";
+import "./Slideshow.scss";
 import nextbtn from "../assets/nextbtn.svg";
 import previousbtn from "../assets/previousbtn.svg";
 import { useState } from "react";

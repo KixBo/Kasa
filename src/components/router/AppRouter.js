@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import AccommodationSheet from "../pages/AccommodationSheet";
 import NotFound from "../pages/NotFound";
-import Layout from "../components/Layout";
+import Layout from "../layout/Layout";
 
 function AppRouter() {
   // state (état, données)

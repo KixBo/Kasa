@@ -1,14 +1,13 @@
-import Banner from "../components/Banner";
-import Card from "../components/Card";
-import data from "../data/accommodations.json";
-import "../styles/home.scss";
+import Banner from "../Banner";
+import Card from "../Card";
+import data from "../../data/accommodations.json";
+import "./Home.scss";
 import { Link } from "react-router-dom";
 
 function Home() {
   // state (état, données)
 
   // comportements
-
   // affichage (render)
   return (
     <>

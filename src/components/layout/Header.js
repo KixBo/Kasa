@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
-import logoHeader from "../assets/logoHeader.svg";
-import "../styles/header.scss";
+import logoHeader from "../../assets/logoHeader.svg";
+import "./Header.scss";
 
 function Header() {
-// state (état, données)
+  // state (état, données)
 
-// comportements
+  // comportements
 
-// affichage (render)
+  // affichage (render)
   return (
     <header className="header">
       <img src={logoHeader} alt="Logo de Kasa" />

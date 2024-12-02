@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../../styles/main.scss";
 
 .cardsContainer {
   margin: 0 100px 50px 100px;
@@ -9,8 +9,7 @@
   row-gap: 50px;
   column-gap: 60px;
   padding: 50px;
-}
-
-.cardLink {
-  max-width: calc((100% - 120px) / 3);
+  .cardLink {
+    max-width: calc((100% - 120px) / 3);
+  }
 }

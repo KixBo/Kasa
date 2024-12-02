@@ -1,36 +1,31 @@
 import { useParams, useNavigate } from "react-router-dom";
-import data from "../data/accommodations.json";
-import Slideshow from "../components/Slideshow";
-import "../styles/AccommodationSheet.scss";
-import starGrey from "../assets/stargrey.svg";
-import starRed from "../assets/starred.svg";
-import Collapse from "../components/Collapse";
+import data from "../../data/accommodations.json";
+import Slideshow from "../Slideshow";
+import "./AccommodationSheet.scss";
+import starGrey from "../../assets/stargrey.svg";
+import starRed from "../../assets/starred.svg";
+import Collapse from "../Collapse";
 import { useEffect } from "react";
 
 function AccommodationSheet() {
   // state (état, données)
   const { id } = useParams();
 
-
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const idArray = data.map((accommodation) => {
-    return accommodation.id
-  })
+    return accommodation.id;
+  });
 
   useEffect(() => {
     if (!idArray.includes(id)) {
       navigate("/*");
     }
-  }, [id]);
+  }, [id, idArray, navigate]);
 
   if (!idArray.includes(id)) {
-    return null
+    return null;
   }
-
-
-
 
   let accommodation = [];
   for (const i of data) {
@@ -42,7 +37,7 @@ function AccommodationSheet() {
   const equipmentList = (
     <ul>
       {accommodation.equipments.map((equipment) => {
-        return <li>{equipment}</li>;
+        return <li key={equipment}>{equipment}</li>;
       })}
     </ul>
   );
@@ -63,7 +58,7 @@ function AccommodationSheet() {
             <div className="tagContainer">
               {accommodation.tags.map((tag) => {
                 return (
-                  <div className="tag">
+                  <div key={tag} className="tag">
                     <p>{tag}</p>
                   </div>
                 );
@@ -90,8 +85,8 @@ function AccommodationSheet() {
         </div>
 
         <div className="collapsesContainer">
-          <Collapse title="Description" content={accommodation.description} style="accommodationSheetStyle" />
-          <Collapse title="Équipements" content={equipmentList} style="accommodationSheetStyle" />
+          <Collapse title="Description" content={accommodation.description} className="accommodationSheetStyle" />
+          <Collapse title="Équipements" content={equipmentList} className="accommodationSheetStyle" />
         </div>
       </div>
     </>

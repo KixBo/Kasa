@@ -1,8 +1,8 @@
-import "../styles/Collapse.scss";
+import "./Collapse.scss";
 import icon from "../assets/dropdownicon.svg";
 import { useState } from "react";
 
-function Collapse({ title, content, style }) {
+function Collapse({ title, content, className }) {
   // state (état, données)
   const [isOpen, setOpen] = useState(false);
 
@@ -11,10 +11,11 @@ function Collapse({ title, content, style }) {
   // affichage (render)
   return (
     <>
-      <div className={`collapseContainer ${style === "accommodationSheetStyle" ? "accommodationShhetStyle" : ""}`}>
+      <div className={`collapseContainer ${className === "accommodationSheetStyle" ? "accommodationSheetStyle" : ""}`}>
         <div className="collapseTitle">
           <h3>{title}</h3>
-          <img className={`icon ${isOpen && "rotation"}`}
+          <img
+            className={`icon ${isOpen && "rotation"}`}
             onClick={() => {
               setOpen(!isOpen);
             }}
@@ -22,9 +23,7 @@ function Collapse({ title, content, style }) {
             alt="Icone d'ouverture/fermeture de l'accordéon"
           />
         </div>
-        <div className={`collapseContent ${isOpen ? "visible" : "invisible"}`}>
-          {content}
-        </div>
+        <div className={`collapseContent ${isOpen ? "visible" : "invisible"}`}>{content}</div>
       </div>
     </>
   );

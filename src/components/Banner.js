@@ -1,4 +1,4 @@
-import "../styles/banner.scss";
+import "./Banner.scss";
 
 function Banner({ children, className }) {
   // state (état, données)

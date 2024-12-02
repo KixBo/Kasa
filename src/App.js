@@ -1,5 +1,4 @@
-import "./styles/App.scss";
-import AppRouter from "./components/AppRouter";
+import AppRouter from "./components/router/AppRouter";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -9,7 +8,12 @@ function App() {
 
   // affichage (render)
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_relativeSplatPath: true,
+        v7_startTransition: true,
+      }}
+    >
       <AppRouter />
     </BrowserRouter>
   );

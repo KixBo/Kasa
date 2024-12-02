@@ -1,0 +1,36 @@
+@import "../styles/main.scss";
+
+.carousel {
+  height: 415px;
+  position: relative;
+  margin-bottom: 30px;
+  .carouselPicture {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .prevBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 23px;
+  }
+  .nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 23px;
+  }
+  .carouselIndex {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    font-weight: 500;
+  }
+  .hidden {
+    display: none;
+  }
+}

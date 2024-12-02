@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom";
-import "../styles/NotFound.scss";
+import "./NotFound.scss";
 
 function NotFound() {
-// state (état, données)
+  // state (état, données)
 
-// comportements
+  // comportements
 
-// affichage (render)
+  // affichage (render)
   return (
     <div className="notFondContainer">
       <p className="errorNumber">404</p>
       <p className="errorText">Oups! La page que vous demandez n'existe pas.</p>
-      <Link to="/" className="homeNavlink">Retourner sur la page d’accueil</Link>
+      <Link to="/" className="homeNavlink">
+        Retourner sur la page d’accueil
+      </Link>
     </div>
   );
 }

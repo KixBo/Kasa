@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../styles/main.scss";
 
 .banner {
   margin: 0px 100px 40px 100px;
@@ -14,9 +14,9 @@
 }
 
 .bannerHome {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/images/bannerbackgroundhome.svg)
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../public/images/bannerbackgroundhome.svg);
 }
 
 .bannerAbout {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../public/images/bannerbackgroundabout.svg)
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../public/images/bannerbackgroundabout.svg);
 }

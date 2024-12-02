@@ -1,6 +1,3 @@
-@import "./variables.scss";
-
-/* Start Reset CSS */
 *,
 *::before,
 *::after {
@@ -10,14 +7,11 @@
 }
 
 html {
-  font-size: $font-size-s;
   line-height: 1.5;
 }
 
 body {
   margin: 0;
-  font-family: $font-family;
-  background-color: #ffffff;
   line-height: 1.5;
 }
 
@@ -62,4 +56,3 @@ table {
 :focus-visible {
   outline: auto;
 }
-/* End Reset CSS */

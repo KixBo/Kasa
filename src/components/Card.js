@@ -1,11 +1,11 @@
-import "../styles/card.scss";
+import "./Card.scss";
 
 function Card({ cover, title }) {
-// state (état, données)
+  // state (état, données)
 
-// comportements
+  // comportements
 
-// affichage (render)
+  // affichage (render)
   return (
     <article className="cardContainer">
       <img className="cardCover" src={cover} alt={`Logement : ${title}`} />

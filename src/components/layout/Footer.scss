@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../../styles/main.scss";
 
 .footer {
   background-color: $black;
@@ -7,13 +7,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footerLogo {
-  margin-top: 66px;
-  margin-bottom: 40px;
-}
-
-.rights {
-  margin-bottom: 30px;
+  .footerLogo {
+    margin-top: 66px;
+    margin-bottom: 40px;
+  }
+  .rights {
+    margin-bottom: 30px;
+  }
 }
