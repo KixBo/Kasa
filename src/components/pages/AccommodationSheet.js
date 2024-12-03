@@ -50,8 +50,8 @@ function AccommodationSheet() {
       <div className="accommodationContainer">
         <Slideshow pictures={accommodation.pictures} title={accommodation.title} />
 
-        <div className="mainContainer">
-          <div className="container1">
+        <div className="mainAccommodationInfoContainer">
+          <div className="infoContainer1">
             <h2 className="accommodationTitle">{accommodation.title}</h2>
             <p className="accommodationLocation">{accommodation.location}</p>
 
@@ -66,7 +66,7 @@ function AccommodationSheet() {
             </div>
           </div>
 
-          <div className="container2">
+          <div className="infoContainer2">
             <div className="hostContainer">
               <p className="hostName">{accommodation.host.name}</p>
               <div className="hostPictureContainer">
@@ -75,18 +75,24 @@ function AccommodationSheet() {
             </div>
 
             <div className="ratingsContainer">
-              <img src={accommodation.rating >= 1 ? starRed : starGrey} alt="Icone de note ..." />
-              <img src={accommodation.rating >= 2 ? starRed : starGrey} alt="Icone de note ..." />
-              <img src={accommodation.rating >= 3 ? starRed : starGrey} alt="Icone de note ..." />
-              <img src={accommodation.rating >= 4 ? starRed : starGrey} alt="Icone de note ..." />
-              <img src={accommodation.rating >= 5 ? starRed : starGrey} alt="Icone de note ..." />
+              <img className="star" src={accommodation.rating >= 1 ? starRed : starGrey} alt="Icone de note ..." />
+              <img className="star" src={accommodation.rating >= 2 ? starRed : starGrey} alt="Icone de note ..." />
+              <img className="star" src={accommodation.rating >= 3 ? starRed : starGrey} alt="Icone de note ..." />
+              <img className="star" src={accommodation.rating >= 4 ? starRed : starGrey} alt="Icone de note ..." />
+              <img className="star" src={accommodation.rating >= 5 ? starRed : starGrey} alt="Icone de note ..." />
             </div>
           </div>
         </div>
 
-        <div className="collapsesContainer">
-          <Collapse title="Description" content={accommodation.description} className="accommodationSheetStyle" />
-          <Collapse title="Équipements" content={equipmentList} className="accommodationSheetStyle" />
+        <div className="accommodationPage accommodationCollapsesContainer">
+          <Collapse
+            title="Description"
+            content={accommodation.description}
+          />
+          <Collapse
+            title="Équipements"
+            content={equipmentList}
+          />
         </div>
       </div>
     </>

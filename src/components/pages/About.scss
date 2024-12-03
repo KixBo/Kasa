@@ -1,29 +1,15 @@
 @import "../../styles/main.scss";
 
-.collapsesContainer {
+.aboutCollapsesContainer {
   margin: 0 208px 38px 208px;
-}
-
-.styleAboutCollapseTitle {
-  font-size: $font-size-m;
-  padding: 10px 20px 10px 15px;
-  height: 54px;
-}
-
-.styleAboutCollapseContent {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 @media (max-width: 1023.98px) {
-  .collapsesContainer {
+  .aboutCollapsesContainer {
     margin: 0 20px 19px 20px;
-  }
-  .styleAboutCollapseTitle {
-    height: 30px;
-    font-size: 13px;
-  }
-  .styleAboutCollapseContent {
-    margin-bottom: 20px;
-    font-size: $font-size-xs;
+    gap: 20px;
   }
 }

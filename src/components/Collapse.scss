@@ -11,7 +11,7 @@
   .icon {
     transform: rotate(0deg);
     transition: transform 300ms ease-in-out;
-    width: 32px;
+    width: 24px;
   }
   .rotation {
     transform: rotate(-180deg);
@@ -35,10 +35,57 @@
   opacity: 0;
 }
 
+.aboutPage {
+  .collapseTitle {
+    height: 54px;
+    padding-inline: 15px 24px;
+    h3 {
+      font-size: $font-size-m;
+    }
+  }
+}
+
+.accommodationPage {
+  .collapseContainer {
+    flex: 1;
+  }
+  .collapseTitle {
+    height: 52px;
+    padding-inline: 10px 24px;
+    h3 {
+      font-size: $font-size-s;
+    }
+  }
+}
+
 @media (max-width: 1023.98px) {
   .collapseTitle {
     .icon {
       width: 16px;
+    }
+  }
+  .aboutPage {
+    .collapseTitle {
+      height: 30px;
+      padding-inline: 10px 12px;
+      h3 {
+        font-size: 13px;
+      }
+    }
+    .collapseContent {
+      font-size: 12px;
+    }
+  }
+  .accommodationPage {
+    .collapseTitle {
+      height: 30px;
+      padding-inline: 10px 12px;
+      h3 {
+        font-size: 13px;
+      }
+    }
+    .collapseContent {
+      font-size: $font-size-xs;
     }
   }
 }

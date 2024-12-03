@@ -34,3 +34,22 @@
     display: none;
   }
 }
+
+@media (max-width: 1023.98px) {
+  .carousel {
+    height: 255px;
+    margin-bottom: 15px;
+    .carouselPicture {
+      border-radius: 10px;
+    }
+    .prevBtn {
+      width: 11.67px;
+    }
+    .nextBtn {
+      width: 11.67px;
+    }
+    .carouselIndex {
+      display: none;
+    }
+  }
+}
