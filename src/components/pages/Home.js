@@ -5,14 +5,10 @@ import "./Home.scss";
 import { Link } from "react-router-dom";
 
 function Home() {
-  // state (état, données)
-
-  // comportements
-  // affichage (render)
   return (
     <>
       <Banner className="bannerHome">
-        <p className="bannerText">Chez vous, partout et ailleurs</p>
+        <h2 className="bannerText">Chez vous, partout et ailleurs</h2>
       </Banner>
       <div className="cardsContainer">
         {data.map((accommodation) => {

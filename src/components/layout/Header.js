@@ -3,14 +3,11 @@ import logoHeader from "../../assets/logoHeader.svg";
 import "./Header.scss";
 
 function Header() {
-  // state (état, données)
-
-  // comportements
-
-  // affichage (render)
   return (
     <header className="header">
-      <img src={logoHeader} alt="Logo de Kasa" className="logo"/>
+      <h1>
+        <img src={logoHeader} alt="Logo de Kasa" className="logo" />
+      </h1>
       <nav>
         <ul className="headerUl">
           <li>

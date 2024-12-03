@@ -1,15 +1,10 @@
 import "./Card.scss";
 
 function Card({ cover, title }) {
-  // state (état, données)
-
-  // comportements
-
-  // affichage (render)
   return (
     <article className="cardContainer">
       <img className="cardCover" src={cover} alt={`Logement : ${title}`} />
-      <h2 className="cardTitle">{title}</h2>
+      <h3 className="cardTitle">{title}</h3>
     </article>
   );
 }

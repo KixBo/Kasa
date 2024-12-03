@@ -1,49 +1,63 @@
 @import "../styles/main.scss";
 
+.collapseContainer {
+  position: relative;
+}
+
 .collapseTitle {
+  position: relative;
+  z-index: 2;
   background-color: $primary-color;
   color: $white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
   .icon {
     transform: rotate(0deg);
     transition: transform 300ms ease-in-out;
     width: 24px;
-  }
-  .rotation {
-    transform: rotate(-180deg);
+    &.rotation {
+      transform: rotate(-180deg);
+    }
   }
 }
+
 .collapseContent {
+  position: relative;
+  z-index: 1;
   background-color: $light-gray;
   border-radius: 0 0 5px 5px;
-  padding: 0;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out, padding 600ms linear;
+  padding-inline: 20px;
+  height: 0;
+  overflow: hidden;
+  transition: transform 300ms ease, height 300ms ease, padding-block 300ms ease;
+  &.visible {
+    height: auto;
+    transform: translateY(-4px);
+    padding-block: 20px;
+  }
+  &.invisible {
+    height: 0;
+    transform: translateY(-20px);
+    padding-block: 0;
+  }
 }
-.visible {
-  max-height: 1000px;
-  opacity: 1;
-  padding: 20px;
-}
-.invisible {
-  max-height: 0;
-  opacity: 0;
-}
+
+// Style pour la page About
 
 .aboutPage {
   .collapseTitle {
     height: 54px;
     padding-inline: 15px 24px;
-    h3 {
+    border-radius: 5px;
+    h2 {
       font-size: $font-size-m;
     }
   }
 }
+
+// Style pour la page Accommodation
 
 .accommodationPage {
   .collapseContainer {
@@ -52,11 +66,14 @@
   .collapseTitle {
     height: 52px;
     padding-inline: 10px 24px;
+    border-radius: 10px;
     h3 {
       font-size: $font-size-s;
     }
   }
 }
+
+// Responsive
 
 @media (max-width: 1023.98px) {
   .collapseTitle {
@@ -68,7 +85,7 @@
     .collapseTitle {
       height: 30px;
       padding-inline: 10px 12px;
-      h3 {
+      h2 {
         font-size: 13px;
       }
     }

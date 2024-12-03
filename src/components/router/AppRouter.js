@@ -6,11 +6,6 @@ import NotFound from "../pages/NotFound";
 import Layout from "../layout/Layout";
 
 function AppRouter() {
-  // state (état, données)
-
-  // comportements
-
-  // affichage (render)
   return (
     <Routes>
       <Route path="/" element={<Layout />}>

@@ -1,6 +1,6 @@
 @import "../../styles/main.scss";
 
-.notFondContainer {
+.notFoundContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,9 +22,10 @@
   }
 }
 
-@media (max-width: 1023.98px) {
-  .notFondContainer {
+// Responsive
 
+@media (max-width: 1023.98px) {
+  .notFoundContainer {
     .errorNumber {
       font-size: 96px;
       margin-top: 50px;

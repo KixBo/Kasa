@@ -4,19 +4,12 @@ import Footer from "./Footer";
 import "./Layout.scss";
 
 function Layout() {
-  // state (état, données)
-
-  // comportements
-
-  // affichage (render)
   return (
-    <>
-      <div className="appContainer">
-        <Header />
-        <Outlet />
-        <Footer />
-      </div>
-    </>
+    <div className="appContainer">
+      <Header />
+      <Outlet />
+      <Footer />
+    </div>
   );
 }
 

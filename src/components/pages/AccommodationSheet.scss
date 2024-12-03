@@ -23,20 +23,6 @@
       gap: 10px;
       margin-bottom: 25px;
       flex-wrap: wrap;
-      .tag {
-        border-radius: 10px;
-        color: $white;
-        background-color: $primary-color;
-        font-weight: 700;
-        font-size: 14px;
-        padding: 5px 20px;
-        text-align: center;
-        flex: 1;
-        max-width: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
     }
   }
   .hostContainer {
@@ -76,6 +62,8 @@
     margin-bottom: 50px;
   }
 }
+
+// Responsive
 
 @media (max-width: 1023.98px) {
   .accommodationContainer {

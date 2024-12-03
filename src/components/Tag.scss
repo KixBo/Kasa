@@ -1,0 +1,26 @@
+@import "../styles/main.scss";
+
+.tag {
+  border-radius: 10px;
+  color: $white;
+  background-color: $primary-color;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px 20px;
+  text-align: center;
+  flex: 1;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Responsive
+
+  @media (max-width: 1023.98px) {
+    .tag {
+      border-radius: 5px;
+      font-size: 10px;
+      max-width: 150px;
+    }
+  }
+}

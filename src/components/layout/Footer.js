@@ -2,11 +2,6 @@ import "./Footer.scss";
 import logoFooter from "../../assets/logoFooter.svg";
 
 function Footer() {
-  // state (état, données)
-
-  // comportements
-
-  // affichage (render)
   return (
     <footer className="footer">
       <img className="footerLogo" src={logoFooter} alt="Logo de Kasa" />
